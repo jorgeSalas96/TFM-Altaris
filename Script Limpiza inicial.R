@@ -165,3 +165,6 @@ ventas_limpio <- ventas %>%
     dia =weekdays(Sales_DAY)
 )
   
+
+#hare un cambio para ver como se guarda
+a <- mean(ventas$Sales_Uds)
