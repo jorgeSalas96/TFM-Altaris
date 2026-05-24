@@ -95,7 +95,7 @@ estanco_cluster %>%
 
 # Tabla final con affiliated_code y clúster
 dim_estanco_cluster <- estanco_cluster %>%
-  select(affiliated_code, engage_num, cluster_num, tam_num, kmeans_cluster)
+  select(affiliated_code, engage_num, cluster_num, kmeans_cluster)
 
 # Subir a BigQuery
 dbWriteTable(
@@ -104,5 +104,4 @@ dbWriteTable(
   dim_estanco_cluster,
   overwrite = TRUE
 )
-
 cat("Tabla dim_estanco_cluster subida correctamente a BigQuery\n")
